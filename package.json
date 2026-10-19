@@ -1,0 +1,44 @@
+{
+  "name": "scidraw-mcp",
+  "version": "0.1.0",
+  "description": "An MCP (Model Context Protocol) server for searching and downloading scientific illustrations from SciDraw.io",
+  "license": "MIT",
+  "author": "SciDraw-MCP Contributors",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "scidraw-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README_zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "scidraw",
+    "scientific-illustrations",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "svg",
+    "scientific-drawings"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
